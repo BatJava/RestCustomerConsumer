@@ -25,7 +25,7 @@ namespace RestCustomerConsumer.MenuHandler
                 Console.WriteLine("5: Update a customer");
                 Console.WriteLine("9: Exit program");
 
-                ConsoleKeyInfo key = Console.ReadKey();
+                ConsoleKeyInfo key = Console.ReadKey();  //måske char key
                 Console.WriteLine("Key:" + key);
 
                 if (char.IsDigit(key.KeyChar))
@@ -42,8 +42,7 @@ namespace RestCustomerConsumer.MenuHandler
                         case 3:
                             menu3(); break;
                         case 4:
-                            menu4();
-                            break;
+                            menu4();break;
                         case 5:
                             menu5();
                             break;
