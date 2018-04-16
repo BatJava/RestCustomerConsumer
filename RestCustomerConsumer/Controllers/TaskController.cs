@@ -12,9 +12,14 @@ namespace RestCustomerConsumer.Controllers
 {
     public class TaskController
     {
-        private const string CustomersUri = "http://localhost:19844/Service1.svc/customers/";
+       // local server used private const string CustomersUri = "http://localhost:19844/Service1.svc/customers/";
+        private const string CustomersUri = "http://restcustomerwebservice.azurewebsites.net/CustomerService.svc/customers";
 
-        public TaskController() { }
+        public TaskController() {    }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
 
         public static async Task<IList<Customer>> GetCustomersAsync()
         {
